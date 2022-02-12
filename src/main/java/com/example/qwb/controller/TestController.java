@@ -26,6 +26,11 @@ public class TestController {
         return testService.getAllTestObject();
     }
 
+    @GetMapping("/test/getFirst")
+    public TestObject getFirst() {
+        return testService.getFirst();
+    }
+
     @PostMapping("/test/create")
     public int createTestObject(@RequestParam("str") String str) {
         return testService.createTestObject(str);

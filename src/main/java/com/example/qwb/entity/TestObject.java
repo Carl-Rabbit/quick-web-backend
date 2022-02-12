@@ -1,28 +1,16 @@
 package com.example.qwb.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
+@TableName(value="test_table")
 public class TestObject {
-    private Integer id;
-
-    private String str;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getStr() {
-        return str;
-    }
-
-    public void setStr(String str) {
-        this.str = str == null ? null : str.trim();
-    }
+    @TableId(value="id",type=IdType.AUTO)
+    Integer id;
+    String str;
 }

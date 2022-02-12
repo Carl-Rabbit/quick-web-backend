@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
 @EnableOpenApi
-@MapperScan("com.example.qwb.dao")
+@MapperScan("com.example.qwb.mapper")
 @SpringBootApplication
 public class QuickWebBackendApplication {
 
