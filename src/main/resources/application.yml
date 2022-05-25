@@ -40,6 +40,6 @@ mybatis:
 
 server:
   # 应用服务 WEB 访问端口
-  port: 8080
+  port: 22222
 
 
